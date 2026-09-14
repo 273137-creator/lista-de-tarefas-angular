@@ -1,59 +1,51 @@
-# ListaDeTarefas
+# Lista de Tarefas — Angular + TypeScript
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 21.2.24.
+Aplicação web para gerenciar tarefas do dia a dia (To-Do List), desenvolvida em Angular com componentes standalone e TypeScript.
 
-## Development server
+## Funcionalidades
 
-To start a local development server, run:
+- Adicionar novas tarefas
+- Marcar tarefas como concluídas
+- Excluir tarefas
+- Filtrar por: todas, pendentes ou concluídas
+- Contador de tarefas pendentes em tempo real
 
+## Tecnologias utilizadas
+
+- Angular (standalone components)
+- TypeScript
+- Angular Forms (`ngModel`) para vínculo de dados
+- CSS puro para estilização
+
+## Como executar o projeto localmente
+
+1. Clone o repositório:
 ```bash
-ng serve
+   git clone https://github.com/273137-creator/lista-de-tarefas-angular.git
+   cd lista-de-tarefas-angular
 ```
-
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
-
-## Code scaffolding
-
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
-
+2. Instale as dependências:
 ```bash
-ng generate component component-name
+   npm install
 ```
-
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
-
+3. Rode o servidor de desenvolvimento:
 ```bash
-ng generate --help
+   ng serve
 ```
+4. Acesse `http://localhost:4200` no navegador.
 
-## Building
+## Estrutura principal
+src/app/
+├── app.ts -> lógica do componente (adicionar, filtrar, remover tarefas)
+├── app.html -> template da interface
+└── app.css -> estilos
 
-To build the project run:
 
-```bash
-ng build
-```
+## Próximos passos (melhorias futuras)
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
+- Salvar as tarefas no localStorage para não perder ao atualizar a página
+- Editar o texto de uma tarefa já criada
+- Conectar a uma API backend para persistência real
 
-## Running unit tests
-
-To execute unit tests with the [Vitest](https://vitest.dev/) test runner, use the following command:
-
-```bash
-ng test
-```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+---
+Projeto desenvolvido por Matheus da Silva Gomes como parte dos estudos em Engenharia de Software.
