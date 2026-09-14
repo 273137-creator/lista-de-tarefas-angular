@@ -35,10 +35,13 @@ Aplicação web para gerenciar tarefas do dia a dia (To-Do List), desenvolvida e
 4. Acesse `http://localhost:4200` no navegador.
 
 ## Estrutura principal
+
+```
 src/app/
-├── app.ts -> lógica do componente (adicionar, filtrar, remover tarefas)
-├── app.html -> template da interface
-└── app.css -> estilos
+├── app.ts       -> lógica do componente (adicionar, filtrar, remover tarefas)
+├── app.html     -> template da interface
+└── app.css      -> estilos
+```
 
 
 ## Próximos passos (melhorias futuras)
