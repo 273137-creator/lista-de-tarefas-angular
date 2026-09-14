@@ -1,0 +1,99 @@
+* { box-sizing: border-box; }
+
+.container {
+  max-width: 480px;
+  margin: 60px auto;
+  font-family: -apple-system, "Segoe UI", Arial, sans-serif;
+  padding: 0 16px;
+}
+
+h1 {
+  font-size: 22px;
+  margin-bottom: 20px;
+  color: #1F4E79;
+}
+
+.nova-tarefa {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 16px;
+}
+
+.nova-tarefa input {
+  flex: 1;
+  padding: 10px 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+.nova-tarefa button {
+  background: #1F4E79;
+  color: #fff;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.filtros {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 16px;
+}
+
+.filtros button {
+  background: #eee;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 13px;
+  cursor: pointer;
+  color: #333;
+}
+
+.filtros button.ativo {
+  background: #1F4E79;
+  color: #fff;
+}
+
+.lista {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.lista li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 0;
+  border-bottom: 1px solid #eee;
+}
+
+.lista li label {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+}
+
+.lista li.concluida span {
+  text-decoration: line-through;
+  color: #999;
+}
+
+.remover {
+  background: none;
+  border: none;
+  color: #c0392b;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.resumo, .vazio {
+  margin-top: 16px;
+  font-size: 13px;
+  color: #666;
+}
